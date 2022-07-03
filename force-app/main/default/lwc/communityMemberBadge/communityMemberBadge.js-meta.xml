@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Community Member Badge</masterLabel>
+    <targets>
+        <target>lightningCommunity__Default</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property 
+                name="memberLabel" 
+                label="Member Label" 
+                type="String" 
+                default="Member" 
+                required="true" 
+            />
+            <property 
+                name="familyMemberLabel" 
+                label="Family Member Label" 
+                type="String"
+                default="Family Member"
+                required="true" 
+            />
+            <property 
+                name="sldsIconName" 
+                label="SLDS Icon Name" 
+                type="String" 
+                default="standard:person_name" 
+                required="true" 
+            />
+            <property 
+                type="Color" 
+                name="backgroundColor" 
+                label="Background Color" 
+                default="rgba(26, 166, 84, 1)" 
+            />
+            <property 
+                type="Color" 
+                name="labelColor" 
+                label="Label Color" 
+                default="rgba(255, 255, 255, 1)" 
+            />
+            
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

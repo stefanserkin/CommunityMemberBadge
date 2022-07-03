@@ -1,0 +1,15 @@
+<template>
+
+	<template if:true={hasMemberStatus}>
+		<div class="slds-align_absolute-center">
+			<div style={badgeBackgroundColor}>
+				<div style={badgeLabelColor}>
+					<div style="--slds-c-badge-font-size:.95rem;--slds-c-badge-sizing-border:5px">
+						<lightning-badge label={badgeLabel} icon-name={sldsIconName}></lightning-badge>
+					</div>
+				</div>
+			</div>
+		</div>
+	</template>
+    
+</template>
